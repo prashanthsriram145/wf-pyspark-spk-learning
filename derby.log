@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Jul 30 12:26:08 IST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0182-4de4-113b-000015855ec0 
+on database directory C:\code\pyspark-spk-learning\metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@59c1a79 
+Loaded from file:/C:/spark-3.2.0-bin-hadoop3.2/jars/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=C:\code\pyspark-spk-learning
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
