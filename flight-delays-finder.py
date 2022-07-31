@@ -1,5 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, desc
+import time
 
 if __name__ == "__main__":
     spark = SparkSession.builder.appName('flight-delays-finder').getOrCreate()
@@ -11,3 +12,7 @@ if __name__ == "__main__":
 
     spark.sql("select * from flights where delay > 120 and origin='SFO' and destination='ORD' order by delay desc").show(5)
     df.select("*").filter("delay > 120 and origin='SFO' and destination='ORD'").orderBy(desc(col("delay"))).show(5)
+
+    df.write.mode("overwrite").csv("departuredelays_df.csv")
+
+    time.sleep(100)
